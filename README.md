@@ -23,3 +23,15 @@
 
 - to find recruitors of the different companies use this search: "site:linkedin.com [enter company name] recruitor"
 - APPLY TO JOBS WHERE THE DESCRIPTIONS SHOW TOOLS YOU'VE NEVER SEEN. YOU WILL GROW AT THAT JOB!.
+
+## Day 2:
+
+### Key takeaways
+
+- Big O Notation: Tells you how well (how fast) a problem is solved.
+- (navigate to bigO folder to see the exercises)
+- Rules for Big O notation:
+- Rule 1: Worse Case  
+- Rule 2: Remove Constants
+- Rule 3: Different terms for inputs
+- Rule 4: Drop Non Dominants
