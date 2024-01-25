@@ -43,3 +43,13 @@ function common(arr1, arr2) {
 }
 
 console.log(common(array1, array2));
+
+/* 
+Now that the code is done, we need to start thinking of ways to break the code:
+Some questions to ask (usually are tests):
+
+Can we assume there is always going to be two parameters? 
+Do those parameters have to be arrays like I origninally wanted?
+
+
+/*
