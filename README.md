@@ -159,3 +159,31 @@ class SpecialPerson extends Player {
 // creating wizard players
 const wizard1 = new Wizard('Sam', 'Dark Magic');
 const wizard2 = new Wizard('Jocelyn', 'Healer');
+
+
+***************************** ARRAYS ***************************** 
+ Methods are: functions within a class.
+* refer to the array folder for code. *
+- Notes:
+- Treat any string interview question like it is an array question because STRINGS ARE SIMPLY ARRAY OF CHARACTERS.
+EX: q: reverse a string:
+
+How I should be thinking:
+
+1. convert the string to an array of characters
+2. Do a loop over the array of characters ('split()')
+3. Return as a string after all operations performed
+
+
+Interview Q 2:
+Ex: Given Two Arrays that are sorted, can you merge these two arrays into one big one that is still sorted
+
+How I should be thinking:
+
+1. Pointers: Create two pointers (one for each array) that will help you traverse through each array.
+2. Compare elements at the current postions of the pointers. Add small element to the merged array
+3. Move pointers; move the pointer of the array from which you added the element from the merged array. Continue the process until you reach the end of one of the arrays.
+4. Handle the remaining elements: If one array still has elements, add them to the merged array since they are already sorted.
+
+
+
