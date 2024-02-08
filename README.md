@@ -36,10 +36,10 @@
 - Rule 3: Different terms for inputs
 - Rule 4: Drop Non Dominants
 
-### Day 3:
+## Day 3:
 - Finished up Big O
 
-### Day 4:
+## Day 4:
 - What causes space complexity? -
 - Variables
 - Data Structures
@@ -56,16 +56,16 @@ BIG O section summary:
 - Time complexity: How long it takes your code to run
 - Space complexity: The memory that is required by the code
 
-#### What are companies looking for?
+## What are companies looking for?
 1. Analytic Skills: How can you think through a problem and analyze them 
 2. Coding Skills: Do you code well? Is it clean and readable?
 3. Technical Skills: Do you know the fundamentals?  
 4. Communication Skills: Can you communicate well with other people? Do you fit?
 
-#### Technical Interview Section
+## Technical Interview Section
 - The key in this section is the cheat sheet (provided by the course). Write everything out! Go step by step.
 
-### Day 5: Data Structures + Algorithms
+## Day 5: Data Structures + Algorithms
 
 - Start of Data Structures and Algorithms:
 - What is a data structure? A way of arranging and storing data (numbers, strings, booleans, etc.) to make it easier to use in computer programs.
@@ -73,7 +73,7 @@ BIG O section summary:
 - What is an Algorithm? An algorithm is a set of step-by-step instructions for solving a specific problem or performing a task.
 - Examples: Sorting, Dynamic Programming, Breadth First Search, Depth First Search, Recursion, etc.
 
-#### Arrays:
+## Arrays:
 - organizes items sequentially in memory.
 - ex: const strings = ['a', 'b', 'c', 'd'];
 - Methods we have that are built in for arrays:
@@ -82,12 +82,12 @@ BIG O section summary:
 - strings.unshift('x') --> adds 'x' at the BEGINNING of our array. In O(n)
 - .splice: strings.splice(starting index, 0, 'what you add') --> adds string to middle of array. In O(n)
 
-#### Arrays: Static vs Dynamic
+### Arrays: Static vs Dynamic
 
 - Static is fixed size.
 - Dynamic allow us to copy and rebuilt an array at a new location (xpands as you add more elements).
 
-#### Classes in JS
+## Classes in JS
 
 3 important things with objects:
 - reference type:
@@ -161,7 +161,7 @@ const wizard1 = new Wizard('Sam', 'Dark Magic');
 const wizard2 = new Wizard('Jocelyn', 'Healer');
 
 
-***************************** ARRAYS ***************************** 
+## ***************************** ARRAYS ***************************** 
  Methods are: functions within a class.
 * refer to the array folder for code. *
 - Notes:
@@ -185,5 +185,59 @@ How I should be thinking:
 3. Move pointers; move the pointer of the array from which you added the element from the merged array. Continue the process until you reach the end of one of the arrays.
 4. Handle the remaining elements: If one array still has elements, add them to the merged array since they are already sorted.
 
+### When Should I use Arrays?
+- Fast look ups
+- Fast push/pop
+- Ordered
+
+### Disadvantages
+- Slow inserts (because we have to shift the entire array)
+- Slow deletes
+- Fixed Size (have to declare ahead of a time in a fixed array)
 
 
+
+## Hash Tables
+
+- Hash Tables are just objects.
+- The objects properties and their corresponding values (key-value) are stored in a way that allows for efficient retrieval and storage. 
+- Methods:
+  - insert: BigO: O(1)
+  - lookup: BigO: O(1)
+  - delete: BigO: O(1)
+  - search: BigO: O(1)
+### Overview
+
+Key-Value Pairs: A hash table is a data structure that stores key-value pairs. In JavaScript, objects are used for this purpose.
+
+#### Hashing Functions 
+- When you assign a value to an object property, JavaScript internally uses a hashing function to convert the key (property name) into a hash. This hash is used to efficiently locate the memory location where the corresponding value is stored
+
+#### Fast Access
+- The use of a hashing function allows for fast access to values. Instead of iterating through a collection of items, JavaScript can directly compute the hash and quickly locate the value associated with a given key.
+
+#### Hash Collisions
+- Occurs when two different keys hash to the same index or bucket. The hash function produces the same hash value for two distinct keys. 
+- This can lead to complications in hash table implementations because the hash table needs to store multiple key-value pairs at the same location
+
+-RESOLUTION: 
+- Seperate Chaining: Each bucket in the hash table is associated with a data structure, often a linked list. Colliding keys are stored as nodes in the linked list at the corresponding bucket. While this method is simple, it may lead to degraded performance if the linked lists become too long.
+- Open Addressing: Instead of using separate data structures for collisions, this approach involves finding the next available slot in the hash table when a collision occurs. There are various techniques within open addressing, such as linear probing (checking the next slot), quadratic probing (checking slots with quadratic increments), or double hashing (using a second hash function).
+
+
+#### Why Hash Tables?
+
+- Hash tables are efficient for searching and retrieving data, making them suitable for applications where quick data retrieval is crucial, such as databases.
+- They are well-suited for scenarios where quick access to specific values based on a key is essential.
+
+#### Hash tables vs Arrays
+
+- Hash tables store data in key-value pairs, allowing for efficient retrieval based on a unique key.
+- Hash tables can dynamically resize themselves to accommodate an increasing number of elements, helping to maintain efficiency.
+- Hash tables do not inherently maintain the order of elements. The order in which elements are stored is not guaranteed to be the order in which they were inserted.
+
+- Arrays store elements in a sequential manner, providing direct access to elements through their indices.
+- The order of elements in an array is maintained, and elements can be accessed sequentially or directly using their indices.
+- Arrays typically have a fixed size, and resizing may involve creating a new array and copying elements, which can be less efficient.
+- Accessing elements in an array is straightforward using the index, making it efficient for scenarios where sequential access or direct indexing is required.
+- ** In summary, hash tables are powerful for quick and efficient access to specific values based on keys, especially in scenarios like databases. Arrays, on the other hand, provide direct and ordered access to elements through indices and are suitable for scenarios where the order of elements is significant. The choice between them depends on the specific requirements of the use case.
