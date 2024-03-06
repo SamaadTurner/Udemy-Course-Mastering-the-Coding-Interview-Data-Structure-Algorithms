@@ -10,7 +10,7 @@ class HashTable {
             this.data.length
         }
         return hash;
-    }
+    }// COME BACK AND USE A LINKED LISTS INSTEAD OF PUSHING TO AN ARRAY
     set(key, value){
         const index = this._hash(key);
         if (!this.data[index]) {
