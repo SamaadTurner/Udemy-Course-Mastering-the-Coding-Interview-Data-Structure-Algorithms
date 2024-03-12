@@ -1,8 +1,7 @@
-# What I did:
 
-## Day 1:
+# Overview
 
-### Key takeaways
+## Key takeaways
 - Talked about all the things non technical that is considered in the interview. Those things are resume, github, and things pertaining to that. I need to do some more open-source contributions (ZTM has a section that has many projects where I can do that).
 - I have done many thiings from the bootcamp that this course is saying that I should do like create a website (use the mashup-template)(look at github).
 - Add LaLa Photobooth to my resume as job history and also add it as a project on my resume. For the job history, talk about how long it took and the deadlines i had to make
@@ -24,9 +23,7 @@
 - to find recruitors of the different companies use this search: "site:linkedin.com [enter company name] recruitor"
 - APPLY TO JOBS WHERE THE DESCRIPTIONS SHOW TOOLS YOU'VE NEVER SEEN. YOU WILL GROW AT THAT JOB!.
 
-## Day 2:
-
-### Key takeaways
+## Key takeaways
 
 - Big O Notation: Tells you how well (how fast) a problem is solved.
 - (navigate to bigO folder to see the exercises)
@@ -36,10 +33,6 @@
 - Rule 3: Different terms for inputs
 - Rule 4: Drop Non Dominants
 
-## Day 3:
-- Finished up Big O
-
-## Day 4:
 - What causes space complexity? -
 - Variables
 - Data Structures
@@ -65,7 +58,7 @@ BIG O section summary:
 ## Technical Interview Section
 - The key in this section is the cheat sheet (provided by the course). Write everything out! Go step by step.
 
-## Day 5: Data Structures + Algorithms
+## Data Structures + Algorithms
 
 - Start of Data Structures and Algorithms:
 - What is a data structure? A way of arranging and storing data (numbers, strings, booleans, etc.) to make it easier to use in computer programs.
@@ -132,7 +125,7 @@ person1.introduce(); // Outputs: Hi, I'm Alice and I'm 25 years old.
 person2.introduce(); // Outputs: Hi, I'm Bob and I'm 30 years old.
 
 
-notes:
+### notes:
 
 - We have a Person class with a constructor that initializes the name and age properties.
 - The introduce method is used to log a message introducing the person, utilizing the name and age properties.
@@ -210,7 +203,7 @@ How I should be thinking:
 
 Key-Value Pairs: A hash table is a data structure that stores key-value pairs. In JavaScript, objects are used for this purpose.
 
-#### Hashing Functions 
+### Hashing Functions 
 - When you assign a value to an object property, JavaScript internally uses a hashing function to convert the key (property name) into a hash. This hash is used to efficiently locate the memory location where the corresponding value is stored
 
 #### Fast Access
@@ -225,12 +218,12 @@ Key-Value Pairs: A hash table is a data structure that stores key-value pairs. I
 - Open Addressing: Instead of using separate data structures for collisions, this approach involves finding the next available slot in the hash table when a collision occurs. There are various techniques within open addressing, such as linear probing (checking the next slot), quadratic probing (checking slots with quadratic increments), or double hashing (using a second hash function).
 
 
-#### Why Hash Tables?
+### Why Hash Tables?
 
 - Hash tables are efficient for searching and retrieving data, making them suitable for applications where quick data retrieval is crucial, such as databases.
 - They are well-suited for scenarios where quick access to specific values based on a key is essential.
 
-#### Hash tables vs Arrays
+## Hash tables vs Arrays
 
 - Hash tables store data in key-value pairs, allowing for efficient retrieval based on a unique key.
 - Hash tables can dynamically resize themselves to accommodate an increasing number of elements, helping to maintain efficiency.
@@ -259,7 +252,7 @@ Key-Value Pairs: A hash table is a data structure that stores key-value pairs. I
 #### Doubly Linked List
 - Each node has a data field and two links/references - one pointing to the next node and another pointing to the previous node in the sequence.
 
-## What is a Pointer?
+### What is a Pointer?
 
 - a reference to another place (or object or node or etc) in memory.
 ex: 
@@ -337,13 +330,13 @@ Stacks are commonly used in DEPTH-FIRST search algorithms.
 - O(log n): 
 
 
-#### Binary Tree
+### Binary Tree
 
 - Each node has AT MOST 2 dhildren (0, 1 or 2): a left child and a right child.
 - Common operations include: IN-ORDER TRAVERSAL, PRE-ORDER TRAVERSAL, AND POST-ORDER TRAVERSAL,
 
 
-#### Binary Search Tree
+### Binary Search Tree
 
 - Each node has at most two child nodes
 - All nodes in its right subtree have keys greater than the node's key.
@@ -358,13 +351,13 @@ WHY SHOULD I USE A BST:
 - Memory Efficiency: Compared to other ordered data structures like sorted arrays, BSTs can provide memory efficiency as they don't require contiguous memory allocation. This is especially beneficial when dealing with dynamic datasets.
 - Balanced Variants for Predictable Performance: Balanced BSTs, such as AVL trees or Red-Black trees, ensure that the tree remains balanced, leading to predictable and optimal performance for various operations. This is particularly important in scenarios where worst-case time complexity matters.
 
-#### Balanced vs Unbalance BST
+### Balanced vs Unbalance BST
 
 - A balanced BST is a tree where the left and right subtrees of every node have similar heights, ensuring that the tree is relatively evenly distributed. This balance helps maintain a logarithmic height, providing efficient search, insert, and delete operations. Examples of balanced BSTs include AVL trees and Red-Black trees.
 - An unbalanced BST has an uneven distribution of nodes, leading to one subtree being significantly larger than the other. This can result in a skewed structure, especially when nodes are inserted in sorted order. In the worst case, an unbalanced BST may degenerate into a linked list, causing inefficient operations.
 
 
-#### AVL Tree
+### AVL Tree
 
 - A self-balancing binary search tree, where the height of the two child subtrees of any node differs by at most one. In other words, it ensures that the tree remains approximately balanced, preventing it from becoming skewed or degenerating into a linked list.
 - The balance factor of a node in an AVL tree is defined as the difference between the heights of its left and right subtrees. If this balance factor is greater than 1 or less than -1, the tree is considered unbalanced, and ROTATIONS ARE PERFORMED to restore balance.
@@ -379,7 +372,7 @@ WHY SHOULD I USE A BST:
 - The additional overhead of maintaining balance can result in slightly slower performance compared to simpler data structures like regular binary search trees in scenarios where frequent insertions and deletions are not critical.
 
 
-#### Red-Black Tree
+### Red-Black Tree
 
 - A Red-Black Tree is a self-balancing binary search tree that maintains balance through the use of color-coding on its nodes. 
   
@@ -393,7 +386,7 @@ WHY SHOULD I USE A BST:
 When to use:
 -  Red-Black Trees are often favored in scenarios where insertions and deletions are more frequent, and the additional balancing constraints of AVL trees are not critical for performance.
 
-#### Binary Heap
+## Binary Heap
 - A binary heap is a nearly complete binary tree (a binary tree filled from left to right on each level, with the last level possibly partially filled) that satisfies the heap property. The heap property differs for two types of heaps: max heap and min heap.
 
 - Max Heap: 
@@ -407,7 +400,7 @@ When to use:
 - Binary heaps are commonly used in priority queues and heap sort algorithms due to their efficient extraction of the maximum or minimum element. The structure of a binary heap allows for quick access to the extreme values, and operations like insertion and deletion are relatively efficient.
 
 
-#### Priority Queue
+## Priority Queue
 - Each element has a priority. Elements with a higher priority get served before elements with a lower.
 - A priority queue is an abstract data type that stores a collection of elements, each associated with a priority or key, and supports two primary operations: insertion (enqueue) and removal of the element with the highest priority (dequeue). 
 - The element with the highest priority is typically the one with the minimum or maximum key, depending on the priority queue's configuration.
@@ -420,11 +413,11 @@ When to use:
 Enqueue (LEFT-RIGHT Insertion): Adding an element to the priority queue.
 Dequeue (Removal): Removing the element with the highest priority.
 
-When to use:
+### When to use:
 
 - Priority queues find applications in various algorithms and scenarios where elements need to be processed in order of priority. Examples include task scheduling, Dijkstra's shortest path algorithm, Huffman coding, and more. They provide a flexible and efficient way to manage elements based on their relative priorities.
 
-#### Trie (prefix tree)
+## Trie (prefix tree)
 - A tree-like data structure (not a tree exactly because it can have an infinity amount of children) that is used to store a dynamic set or associative array where the keys are usually sequences, such as strings. It is particularly efficient for tasks that involve matching, searching, and retrieval operations on strings.
 - Allows you to know if a word or part of a word exists in a body of text.
 - This tree like data structure is like auto-completion on your phone. Good for searching words in a dictionary providing auto suggestion. The root node of a subtree usually is a letter and the children on both left and right may complete a word with that root letter.
@@ -436,7 +429,7 @@ When to use:
 1. Vertices (Nodes): Represent entities or points in the graph.
 2. Edges: Connect pairs of vertices and represent relationships or interactions.
 
-#### Types of graphs
+### Types of graphs
 Direction: 
 1. Undirected Graphs: Edges have no direction, meaning the connection between two vertices is symmetric.
 2. Directed Graphs (Digraphs): Edges have a direction, indicating a one-way relationship between vertices.
@@ -495,7 +488,7 @@ Shape:
   - Problems that involve state manipulation, such as updating variables or working with mutable data structures, often lend themselves well to iteration.
 
 
-## Recursion When:
+### Recursion When:
 Note: use when doing BFS AND DFS
 1. Problem Has a Recursive Structure:
   - If the problem can be naturally divided into smaller subproblems that are similar to the original problem, recursion can provide an elegant and concise solution.
@@ -544,7 +537,7 @@ After these operations, a will have the original value of b (10), and b will hav
 ### Merge Sort
 -  It works by dividing the unsorted list into n sub-lists, each containing one element (the base case), and then repeatedly merging sub-lists to produce new sorted sub-lists until there is only one sub-list remaining, which is the sorted list. It is a stable sorting algorithm and has a time complexity of O(n log n).
   
-### Detailed Instuctions
+#### Detailed Instuctions
 
 - Divide: Divide the unsorted list into n sub-lists, each containing one element.
 
@@ -553,14 +546,177 @@ After these operations, a will have the original value of b (10), and b will hav
 - Merge: Merge two sub-lists into a single, sorted sub-list. This process is done recursively until there is only one sub-list.
 
 
-## Quick Sort
+### Quick Sort
 - Works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The process is then repeated on each of the sub-arrays.
 - The fastest on average. Downside, it has a bad worse case. If you cant gurantee a good pivot number selection, dont use this sort.
 
-### Detailed Instructions
+#### Detailed Instructions
 
 1. Choose a Pivot: Select an element from the array to act as the pivot. The choice of the pivot can significantly impact the algorithm's efficiency.
 2. Partitioning: Rearrange the array elements in such a way that elements smaller than the pivot are moved to its left, and elements greater than the pivot are moved to its right. The pivot itself is in its final sorted position.
 3. Recursion: Recursively apply the same process to the sub-arrays on the left and right of the pivot until the base case is reached. The base case is typically when the sub-array has zero or one element, in which case it is already sorted.
 4. Combine: Combine the sorted sub-arrays to get the final sorted array.
   
+
+## When Should I use any of these sorts??
+
+* Insertion Sort: When you have only a few items, input is small, or items are mostly already sorted.
+* Bubble Sort: Dont use it. Used as a teaching mechanism.
+* Selection Sort: Dont use it. Used as a teaching mechanism.
+* Merge Sort: Always when worried about worse case, external sorting.
+* Quick Sort: Only when you can pick a good pivot.
+  
+
+# SEARCHING
+- We search in everything, whether that be on youtube, google, facebook, or almost everything else.
+- How do places like those search so fast?
+  
+## Linear Search (sequential search):
+- Best case (item is the first element in list): O(1)
+- Worse case (have to go through entire lists): O(n)
+- Wouldnt use this to search on Google, facebook, or any of those because of the worse case.
+
+- Straightforward method for finding a specific value within a list or array. Each element of the list is examined one by one until a match is found or the entire list has been searched.
+
+### Typical methods
+
+var beasts = ['Centaur', 'Godzilla', 'Mosura', 'Minotaur', 'Hydra', 'Nessie'];
+
+- beasts.indexOf('Godzilla'); // Output: 1
+
+- beasts.findIndex(function(item){
+    return item === 'Godzilla';
+}); // Output: 1
+
+- beasts.find(function(item){
+    return item === 'Godzilla';
+}) // Output: 'Godzilla'
+
+- beasts.includes('Godzilla'); // Output: true
+  
+## Binary Search (ONLY CAN USE WHEN LIST OR ARRAY IS SORTED):
+- O(log n)
+- repeatedly divide the search space in half, discarding half of the remaining elements based on the comparison with the target value. This process continues until the target value is found or the search space is empty.
+
+### Detailed Explanation:
+1. Start with a Sorted List:
+- Binary search requires the input list to be sorted in ascending or descending order.
+2. Set Initial Bounds:
+- Define two pointers, 'left' and 'right' to represent the current search space. Initially, 'left' is set to the beginning of the list, and 'right' is set to the end.
+3. Find the Middle Element:
+- Calculate the middle index between 'left' and 'right'. If the middle element is equal to the target value, the search is successful.
+4. Compare and Narrow the Search Space:
+- If the middle element is greater than the target value, update 'right' to be one less than the middle index, effectively discarding the right half of the search space. If the middle element is less than the target value, update 'left' to be one more than the middle index, discarding the left half.
+5. Repeat (recursion):
+- Repeat steps 3-4 until the target value is found or the search space is empty.
+
+# Traversals
+- Tree Traversal?
+- Graph Traversal?
+- Regardless, you have to use BFS or DFS
+
+## Breadth First Search (BFS)
+- Left to Right Level by Level
+- Start at a specific node (often called the 'source' node) and explore its neighbors before moving on to the next level of neighbors.
+
+### Detailed steps
+1. Start at the Source Node:
+- Begin the traversal at the source node or starting point.
+2. Explore Neighbors:
+- Visit all the neighbors of the current node before moving on to their neighbors.
+3. Move to the Next Level:
+- Move to the next level of nodes in the graph, exploring their neighbors.
+4. Repeat Until All Nodes are Visited:
+- Continue this process until all nodes in the graph have been visited or until a specific condition is met.
+
+## Depth First Search (DFS)
+- Exlplores as far as possible along one branch of the graph before backtracking. It uses a stack to keep track of nodes to visit.
+
+## Detailed Steps
+1. Initialization:
+- Created an empty set or array to keep track of visited nodes.
+- Define the starting node from which the DFS will begin.
+2. Check if the current node has been visited:
+- Before processing the current node, check whether it has been visited before. This ensures that each node is visited only once.
+3. Process the current node:
+- Perform any desired operations on the current node. This step is application specifc and can involve tasks such as printing, counting, or analyzing the node.
+4. Mark the current node as visited:
+- After processing the current node, mark it as visited. This prevents revisiting the same node in subsequent steps.
+5. Explore neighbors recursively:
+- For each unvisited neighbor of the current node, recursively apply the DFS algorithm. This involves repeating steps 2-4 for each neighbor.
+6. Base cae for recursion:
+- Ensure there is a base case to terminate the recursion. In DFS, this often involves checking if a node has been visited before initiating the recursive call.
+7. Repeat for all nodes:
+- Repeat steps 2-6 until all nodes in the connected compound or graph have been visited.
+
+## Types of Traversals for DFS:
+1. Inorder: Left, Root, Right
+  - explanation: In an inorder traversal, the left subtree is visited first, followed by the root node, and then the right subtree. This order is commonly used for binary search trees to visit nodes in ascending order.
+- code:
+   function inorderTraversal(node) {
+  if (node) {
+    inorderTraversal(node.left);
+    console.log(node.value);
+    inorderTraversal(node.right);
+  }
+}
+
+2. Preorder: Root, Left, Right
+   -Explanation: In a preorder traversal, the root node is visited first, followed by the left subtree and then the right subtree.
+- code: 
+  function preorderTraversal(node) {
+  if (node) {
+    console.log(node.value);
+    preorderTraversal(node.left);
+    preorderTraversal(node.right);
+  }
+}
+
+3. Postorder: Left, Right, Root
+  - Explanation: In a postorder traversal, the left subtree is visited first, followed by the right subtree, and finally, the root node.
+- code:
+  function postorderTraversal(node) {
+  if (node) {
+    postorderTraversal(node.left);
+    postorderTraversal(node.right);
+    console.log(node.value);
+  }
+}
+
+
+## BFS vs DFS - Pros and Cons
+### BFS
+#### Pros
+1. Shortest Path: BFS guarantees that the first time a node is visited is the shortest path to that node from the source. This is particularly useful when you need to find the shortest path in an unweighted graph.
+
+2. Closer Nodes First: BFS explores nodes level by level, which can be useful when the goal is to visit nodes closer to the source node before moving on to nodes farther away.
+
+3. Complete: BFS is guaranteed to find the solution (if one exists) in a connected graph, given infinite resources.
+
+#### Cons
+1. Memory Usage: BFS may use more memory as it needs to store all the nodes at the current level in a queue.
+
+2. Not Suitable for Large Graphs: In some cases, BFS might not be practical for large graphs due to its memory requirements.
+
+### DFS 
+#### Pros:
+1. Memory Usage: DFS generally uses less memory compared to BFS, especially in scenarios where the depth of the tree or graph is much larger than its breadth.
+
+2. Simplicity: DFS is often easier to implement recursively, and the code is generally simpler and more straightforward.
+
+3. Topological Sorting: DFS can be used to perform topological sorting of a directed acyclic graph, which is useful in various applications.
+
+#### Cons:
+1. Unpredictable Path: The path found by DFS may not be the shortest, and it depends on the order in which the nodes are traversed.
+
+2. May Get Stuck: DFS may get stuck in an infinite loop if not implemented properly with proper cycle detection mechanisms, especially in the case of cyclic graphs.
+
+3. Not Guaranteed to Find the Solution: DFS might not find a solution in some cases, depending on the structure of the graph.
+
+
+## BFS vs DFS - When to use
+### BFS: 
+- Use BFS when the shortest path is important, or when you want to explore nodes level by level. It's suitable for finding the shortest path in unweighted graphs or for exploring all nodes within a certain distance from the source.
+
+### DFS
+- Use DFS when memory is a concern, or when you want to explore deeper into the graph before backtracking. It's suitable for tasks like topological sorting, detecting cycles in a graph, or navigating through a maze.
